@@ -7,7 +7,7 @@ These have been tested on 10.10 - Yosemite.
 These tools include:
 
 * [Finder Path to Clipboard](#head1234)
-* *Outlook tools*
+* *Outlook tools* (TODO)
 
 # <a name="head1234"></a>Finder Path to Clipboard
 
