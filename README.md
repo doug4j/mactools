@@ -6,5 +6,15 @@ These have been tested on 10.10 - Yosemite.
 
 These tools include:
 
-* File Path Clipboard Creator
+* *Copy Single Selected Finder Item Path to Clipboard* - a
 * Outlook tools
+
+# Copy Single Selected Finder Item Path to Clipboard
+
+## Purpose
+This is a finder service that copies a selected finder object path to the clipboard. 
+
+## Installation
+
+1. Download the "Copy Single Selected Finder Item Path to Clipboard.workflow" file
+2. Double click on the file [https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-Finder-Path-to-Clipboard.png]
