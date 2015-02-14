@@ -17,4 +17,4 @@ This is a finder service that copies a selected finder object path to the clipbo
 ## Installation
 
 1. Download the "Copy Single Selected Finder Item Path to Clipboard.workflow" file
-2. Double click on the file [https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-Finder-Path-to-Clipboard.png]
+2. Double click on the file and choose install ![Install Service Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-Finder-Path-to-Clipboard.png "Install Service Image") 
