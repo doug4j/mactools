@@ -6,10 +6,10 @@ These have been tested on 10.10 - Yosemite.
 
 These tools include:
 
-* *Copy Single Selected Finder Item Path to Clipboard* - a
-* Outlook tools
+* *Finder Path to Clipboard*[link](#head1234)
+* *Outlook tools*
 
-# Copy Single Selected Finder Item Path to Clipboard
+# <a name="head1234"></a>Finder Path to Clipboard
 
 ## Purpose
 This is a finder service that copies a selected finder object path to the clipboard. 
