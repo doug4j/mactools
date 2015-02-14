@@ -27,3 +27,12 @@ This is a finder service that copies a selected finder object path to the clipbo
 2. Right click and choose "Services > Copy Single Selected Finder Item Path to Clipboard" ![Choose File Path to Clipboard Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Choose-Finder-Path-to-Clipboard.png "Choose File Path to Clipboard Image")
 3. A dialog box indicates that the selected file path is now in your clipboard ![OK File Path to Clipboard Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Message-Finder-Path-to-Clipboard.png "OK File Path to Clipboard Image")
  
+
+## Adding a keyboard shortcut
+
+1. To go "System Preferences > Keyboard"
+2. Choose "Shortcuts" and on the left side choose "Services"
+3. Under "Files and Folders" find "Copy Single Selected Finder It..."
+4. Click the "add shortcut" button
+5. Add your shortcut such as option + shift + command + c ![Keyboard shortcut 1 Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Copy-Finder-Path-Keyboard1.png "Keyboard shortcut 1 Image")
+
