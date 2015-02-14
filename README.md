@@ -18,8 +18,12 @@ This is a finder service that copies a selected finder object path to the clipbo
 
 1. Download the [mactools/src/install/Copy Single Selected Finder Item Path to Clipboard.zip](https://github.com/doug4j/mactools/raw/master/src/install/Copy%20Single%20Selected%20Finder%20Item%20Path%20to%20Clipboard.zip) file
 2. Double click the zip file to unpack the underlying workflow file ("Copy Single Selected Finder Item Path to Clipboard") ![Unzipped Workflow Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Unzipped-Finder-Path-to-Clipboard.png "Unzipped Workflow Image")
-2. Double click on the file and choose install ![Install Service Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-Finder-Path-to-Clipboard.png "Install Service Image") 
-3. The installation should yield a positive result ![Install Service OK Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-OK-Finder-Path-to-Clipboard.png "Install Service Image OK") 
+3. Double click on the file and choose install ![Install Service Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-Finder-Path-to-Clipboard.png "Install Service Image") 
+4. The installation should yield a positive result ![Install Service OK Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-OK-Finder-Path-to-Clipboard.png "Install Service Image OK") 
 
-## Installation Verification
+## Usage
+
+1. Select a single file in the finder window
+2. Right click and choose "Services > Copy Single Selected Finder Item Path to Clipboard" ![Choose File Path to Clipboard Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Choose-Finder-Path-to-Clipboard.png "Choose File Path to Clipboard Image")
+3. A dialog box indicates that the selected file path is now in your clipboard ![OK File Path to Clipboard Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Message-Finder-Path-to-Clipboard.png "OK File Path to Clipboard Image")
  
