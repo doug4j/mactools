@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>409.1</string>
+	<key>AMApplicationVersion</key>
+	<string>2.5</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>-- Modeified from: http://bylr.net/3/2011/07/omnifocus-script-get-total-time-of-selected-items/-- To change settings, modify the following propertyproperty useGrowl : true --if true, will use Growl for success/failure alerts-- Don't change theseproperty growlAppName : "Dan's Scripts"property allNotifications : {"General", "Error"}property enabledNotifications : {"General", "Error"}property iconApplication : "OmniFocus.app"on main()	tell application "OmniFocus"		tell content of first document window of front document			--Get selection			set totalMinutes to 0			set validSelectedItemsList to value of (selected trees where class of its value is not folder and class of its value is not context)			set totalItems to count of validSelectedItemsList			if totalItems is 0 then				set alertName to "Error"				set alertTitle to "Script failure"				set alertText to "No valid task(s) selected"				my notify(alertName, alertTitle, alertText)				return			end if						--Perform action			repeat with thisItem in validSelectedItemsList				--display dialog "isContext " &amp; (thisItem is context)				--display dialog "name " &amp; (thisItem to name of thisItem)				set thisTaskSubTaskNum to number of tasks of thisItem								set thisEstimate to estimated minutes of thisItem				set thisTaskName to name of thisItem				set thisTaskBlocked to blocked of thisItem				set thisTaskCompleted to completed of thisItem								--display dialog "task: '" &amp; thisTaskName &amp; " estimate: " &amp; thisEstimate &amp; " mins, " &amp; " isBlocked: " &amp; thisTaskBlocked &amp; ", completed: " &amp; thisTaskCompleted &amp; ", subTaskCount: " &amp; thisTaskSubTaskNum								if thisEstimate is not missing value and thisTaskBlocked is false and thisTaskSubTaskNum is 0 and thisTaskCompleted is false then set totalMinutes to totalMinutes + thisEstimate			end repeat			set modMinutes to (totalMinutes mod 60)			set totalHours to (totalMinutes div 60)		end tell	end tell		--Show summary notification	if totalItems is 1 then		set itemSuffix to ""	else		set itemSuffix to "s"	end if	set alertName to "General"	set alertTitle to "Script complete"	set alertText to totalHours &amp; "h " &amp; modMinutes &amp; "m total for " &amp; totalItems &amp; " item" &amp; itemSuffix as string	my notify(alertName, alertTitle, alertText)end main(* Begin notification code *)on notify(alertName, alertTitle, alertText)	--Call this to show a normal notification	my notifyMain(alertName, alertTitle, alertText, false)end notifyon notifyWithSticky(alertName, alertTitle, alertText)	--Show a sticky Growl notification	my notifyMain(alertName, alertTitle, alertText, true)end notifyWithStickyon IsGrowlRunning()	tell application "System Events" to set GrowlRunning to (count of (every process where creator type is "GRRR")) &gt; 0	return GrowlRunningend IsGrowlRunningon dictToString(dict) --needed to encapsulate dictionaries in osascript	set dictString to "{"	repeat with i in dict		if (length of dictString &gt; 1) then set dictString to dictString &amp; ", "		set dictString to dictString &amp; "\"" &amp; i &amp; "\""	end repeat	set dictString to dictString &amp; "}"	return dictStringend dictToStringon notifyWithGrowl(growlHelperAppName, alertName, alertTitle, alertText, useSticky)	tell my application growlHelperAppName		«event register» given «class appl»:growlAppName, «class anot»:allNotifications, «class dnot»:enabledNotifications, «class iapp»:iconApplication		«event notifygr» given «class name»:alertName, «class titl»:alertTitle, «class appl»:growlAppName, «class desc»:alertText	end tellend notifyWithGrowlon NotifyWithoutGrowl(alertText)	tell application "OmniFocus" to display dialog alertText with icon 1 buttons {"OK"} default button "OK"end NotifyWithoutGrowlon notifyMain(alertName, alertTitle, alertText, useSticky)	set GrowlRunning to my IsGrowlRunning() --check if Growl is running...	if not GrowlRunning then --if Growl isn't running...		set GrowlPath to "" --check to see if Growl is installed...		try			tell application "Finder" to tell (application file id "GRRR") to set strGrowlPath to POSIX path of (its container as alias) &amp; name		end try		if GrowlPath is not "" then --...try to launch if so...			do shell script "open " &amp; strGrowlPath &amp; " &gt; /dev/null 2&gt;&amp;1 &amp;"			delay 0.5			set GrowlRunning to my IsGrowlRunning()		end if	end if	if GrowlRunning then		tell application "Finder" to tell (application file id "GRRR") to set growlHelperAppName to name		notifyWithGrowl(growlHelperAppName, alertName, alertTitle, alertText, useSticky)	else		NotifyWithoutGrowl(alertText)	end ifend notifyMain(* end notification code *)main()</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>DF827CDE-7625-4EA3-A861-FC27EDC3CF3C</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>6A1D3E34-98E3-47F5-9596-A8D53053DBF0</string>
+				<key>UUID</key>
+				<string>F4220A53-F944-494E-9622-9C33751DD6F0</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>309.000000:316.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict/>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>serviceApplicationBundleID</key>
+		<string>com.omnigroup.OmniFocus2.MacAppStore</string>
+		<key>serviceApplicationPath</key>
+		<string>/Applications/OmniFocus.app</string>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.servicesMenu</string>
+	</dict>
+</dict>
+</plist>
