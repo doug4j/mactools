@@ -7,7 +7,7 @@ These have been tested on 10.10 - Yosemite.
 These tools include:
 
 * [Finder Path to Clipboard](#head1234)
-* [OmniFocus Effort by Selected Report]
+* [OmniFocus Effort by Selected Report] (#OmniFocusEffortBySelectedReport)
 * *Outlook tools* (TODO)
 
 # <a name="head1234"></a>Finder Path to Clipboard
@@ -37,7 +37,7 @@ This is a finder service that copies a selected finder object path to the clipbo
 4. Click the "add shortcut" button ![Keyboard shortcut 1 Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Copy-Finder-Path-Keyboard1.png "Keyboard shortcut 1 Image")
 5. Add your shortcut such as option + shift + command + c ![Keyboard shortcut 2 Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Copy-Finder-Path-Keyboard2.png "Keyboard shortcut 2 Image")
 
-# <a name="head1234"></a>OmniFocusEffort By Selected Report
+# <a name="OmniFocusEffortBySelectedReport"></a>OmniFocus Effort By Selected Report
 
 ## Purpose
 This allows you to select tasks in OmniFocus and calculate the total effort hours for the selected items. 
