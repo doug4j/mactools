@@ -18,15 +18,15 @@ This is a finder service that copies a selected finder object path to the clipbo
 ## Installation
 
 1. Download the [mactools/src/install/Copy Single Selected Finder Item Path to Clipboard.zip](src/install/Copy%20Single%20Selected%20Finder%20Item%20Path%20to%20Clipboard.zip) file
-2. Double click the zip file to unpack the underlying workflow file ("Copy Single Selected Finder Item Path to Clipboard") ![Unzipped Workflow Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Unzipped-Finder-Path-to-Clipboard.png "Unzipped Workflow Image")
-3. Double click on the file and choose install ![Install Service Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-Finder-Path-to-Clipboard.png "Install Service Image") 
-4. The installation should yield a positive result ![Install Service OK Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-OK-Finder-Path-to-Clipboard.png "Install Service Image OK") 
+2. Double click the zip file to unpack the underlying workflow file ("Copy Single Selected Finder Item Path to Clipboard") ![Unzipped Workflow Image](src/main/images/Unzipped-Finder-Path-to-Clipboard.png "Unzipped Workflow Image")
+3. Double click on the file and choose install ![Install Service Image](src/main/images/Service-Installer-Finder-Path-to-Clipboard.png "Install Service Image") 
+4. The installation should yield a positive result ![Install Service OK Image](src/main/images/Service-Installer-OK-Finder-Path-to-Clipboard.png "Install Service Image OK") 
 
 ## Usage
 
 1. Select a single file in the finder window
-2. Right click and choose "Services > Copy Single Selected Finder Item Path to Clipboard" ![Choose File Path to Clipboard Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Choose-Finder-Path-to-Clipboard.png "Choose File Path to Clipboard Image")
-3. A dialog box indicates that the selected file path is now in your clipboard ![OK File Path to Clipboard Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Message-Finder-Path-to-Clipboard.png "OK File Path to Clipboard Image")
+2. Right click and choose "Services > Copy Single Selected Finder Item Path to Clipboard" ![Choose File Path to Clipboard Image](src/main/images/Choose-Finder-Path-to-Clipboard.png "Choose File Path to Clipboard Image")
+3. A dialog box indicates that the selected file path is now in your clipboard ![OK File Path to Clipboard Image](src/main/images/Message-Finder-Path-to-Clipboard.png "OK File Path to Clipboard Image")
  
 
 ## Adding a keyboard shortcut
@@ -35,7 +35,7 @@ This is a finder service that copies a selected finder object path to the clipbo
 2. Choose "Shortcuts" and on the left side choose "Services"
 3. Under "Files and Folders" find "Copy Single Selected Finder It..."
 4. Click the "add shortcut" button ![Keyboard shortcut 1 Image](src/main/images/Copy-Finder-Path-Keyboard1.png "Keyboard shortcut 1 Image")
-5. Add your shortcut such as option + shift + command + c ![Keyboard shortcut 2 Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Copy-Finder-Path-Keyboard2.png "Keyboard shortcut 2 Image")
+5. Add your shortcut such as option + shift + command + c ![Keyboard shortcut 2 Image](src/main/images/Copy-Finder-Path-Keyboard2.png "Keyboard shortcut 2 Image")
 
 # <a name="OmniFocusEffortBySelectedReport"></a>OmniFocus Effort By Selected Report
 
@@ -44,16 +44,16 @@ This allows you to select tasks in OmniFocus and calculate the total effort hour
 
 ## Installation
 
-1. Download the [mactools/src/install/Effort by Selected Report.zip](https://github.com/doug4j/mactools/blob/master/src/install/Effort%20by%20Selected%20Report.zip) file
-2. Double click the zip file to unpack the underlying workflow file ("Effort by Selected report") ![Unzipped Workflow Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Unzipped-Finder-Path-to-Clipboard.png "Unzipped Workflow Image")
-3. Double click on the file and choose install ![Install Service Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-Finder-Path-to-Clipboard.png "Install Service Image") 
-4. The installation should yield a positive result ![Install Service OK Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Service-Installer-OK-Finder-Path-to-Clipboard.png "Install Service Image OK") 
+1. Download the [mactools/src/install/Effort by Selected Report.zip](src/install/Effort%20by%20Selected%20Report.zip) file
+2. Double click the zip file to unpack the underlying workflow file ("Effort by Selected report") ![Unzipped Workflow Image](src/main/images/Unzipped-Finder-Path-to-Clipboard.png "Unzipped Workflow Image")
+3. Double click on the file and choose install ![Install Service Image](src/main/images/Service-Installer-Finder-Path-to-Clipboard.png "Install Service Image") 
+4. The installation should yield a positive result ![Install Service OK Image](src/main/images/Service-Installer-OK-Finder-Path-to-Clipboard.png "Install Service Image OK") 
 
 ## Usage
 
 1. Select a single file in the finder window
-2. Right click and choose "Services > Copy Single Selected Finder Item Path to Clipboard" ![Choose File Path to Clipboard Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Choose-Finder-Path-to-Clipboard.png "Choose File Path to Clipboard Image")
-3. A dialog box indicates that the selected file path is now in your clipboard ![OK File Path to Clipboard Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Message-Finder-Path-to-Clipboard.png "OK File Path to Clipboard Image")
+2. Right click and choose "Services > Copy Single Selected Finder Item Path to Clipboard" ![Choose File Path to Clipboard Image](src/main/images/Choose-Finder-Path-to-Clipboard.png "Choose File Path to Clipboard Image")
+3. A dialog box indicates that the selected file path is now in your clipboard ![OK File Path to Clipboard Image](src/main/images/Message-Finder-Path-to-Clipboard.png "OK File Path to Clipboard Image")
  
 
 ## Adding a keyboard shortcut
@@ -61,8 +61,5 @@ This allows you to select tasks in OmniFocus and calculate the total effort hour
 1. To go "System Preferences > Keyboard"
 2. Choose "Shortcuts" and on the left side choose "Services"
 3. Under "Files and Folders" find "Copy Single Selected Finder It..."
-4. Click the "add shortcut" button ![Keyboard shortcut 1 Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Copy-Finder-Path-Keyboard1.png "Keyboard shortcut 1 Image")
-5. Add your shortcut such as option + shift + command + c ![Keyboard shortcut 2 Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Copy-Finder-Path-Keyboard2.png "Keyboard shortcut 2 Image")
- 
-
-
+4. Click the "add shortcut" button ![Keyboard shortcut 1 Image](src/main/images/Copy-Finder-Path-Keyboard1.png "Keyboard shortcut 1 Image")
+5. Add your shortcut such as option + shift + command + c ![Keyboard shortcut 2 Image](src/main/images/Copy-Finder-Path-Keyboard2.png "Keyboard shortcut 2 Image")
