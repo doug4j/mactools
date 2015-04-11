@@ -34,7 +34,7 @@ This is a finder service that copies a selected finder object path to the clipbo
 1. To go "System Preferences > Keyboard"
 2. Choose "Shortcuts" and on the left side choose "Services"
 3. Under "Files and Folders" find "Copy Single Selected Finder It..."
-4. Click the "add shortcut" button ![Keyboard shortcut 1 Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Copy-Finder-Path-Keyboard1.png "Keyboard shortcut 1 Image")
+4. Click the "add shortcut" button ![Keyboard shortcut 1 Image](src/main/images/Copy-Finder-Path-Keyboard1.png "Keyboard shortcut 1 Image")
 5. Add your shortcut such as option + shift + command + c ![Keyboard shortcut 2 Image](https://github.com/doug4j/mactools/blob/master/src/main/images/Copy-Finder-Path-Keyboard2.png "Keyboard shortcut 2 Image")
 
 # <a name="OmniFocusEffortBySelectedReport"></a>OmniFocus Effort By Selected Report
