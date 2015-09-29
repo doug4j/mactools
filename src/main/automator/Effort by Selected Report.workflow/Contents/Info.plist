@@ -17,6 +17,10 @@
 				<key>NSApplicationIdentifier</key>
 				<string>com.omnigroup.OmniFocus2.MacAppStore</string>
 			</dict>
+			<key>NSSendTypes</key>
+			<array>
+				<string>public.utf8-plain-text</string>
+			</array>
 		</dict>
 	</array>
 </dict>

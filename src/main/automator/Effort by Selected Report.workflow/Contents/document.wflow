@@ -122,7 +122,7 @@ end run</string>
 		<key>serviceApplicationPath</key>
 		<string>/Applications/OmniFocus.app</string>
 		<key>serviceInputTypeIdentifier</key>
-		<string>com.apple.Automator.nothing</string>
+		<string>com.apple.Automator.text</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
